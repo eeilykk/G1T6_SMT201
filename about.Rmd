@@ -1,0 +1,9 @@
+---
+title: "Project Report"
+description: |
+  Here, you will find our project proposal   
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

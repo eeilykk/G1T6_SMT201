@@ -1,0 +1,5 @@
+---
+title: "G1T6"
+site: distill::distill_website
+listing: posts
+---

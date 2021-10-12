@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to G1T6 GIS Project Website",
+    "description": "Insert a less than 350 word summary here about motivation, objective, and main feature of application",
+    "author": [
+      {
+        "name": "Kylie Tan, Shayna Teh, Yeoshi",
+        "url": {}
+      }
+    ],
+    "date": "2021-10-09",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-10-12T16:30:45+08:00",
+    "input_file": {}
+  }
+]

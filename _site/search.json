@@ -1,0 +1,27 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "Project Report",
+      "description": "Here, you will find our project proposal   ",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-12T16:33:27+08:00"
+    },
+    {
+      "path": "index.html",
+      "title": "G1T6",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-12T16:37:28+08:00"
+    },
+    {
+      "path": "Project_Poster.html",
+      "title": "Our Poster",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-12T16:38:23+08:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
