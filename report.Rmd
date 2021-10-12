@@ -1,7 +1,7 @@
 ---
 title: "Project Report"
 description: |
-  Here, you will find our project proposal   
+  Click on the button below to view our report. 
 ---
 
 ```{r setup, include=FALSE}

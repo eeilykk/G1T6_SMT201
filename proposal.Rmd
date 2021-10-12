@@ -1,0 +1,25 @@
+---
+title: "Our Proposal"
+description: |
+  Here, you will find our project proposal   
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Motivation 
+
+
+
+### Objective 
+
+
+
+### Data 
+
+
+### Scope of Work 
+
+
+### Project Schedule

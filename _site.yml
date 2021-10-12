@@ -1,13 +1,20 @@
 name: "SMT 201 Group 6"
 title: "G1t6" #title changes the left hand corner of the website
 description: |
-  SMT201 Project lit
+  SMT201 Project 2021
 output_dir: "_site"
 navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+  left:
+    - text: "Proposal"
+      href: proposal.html
+    - text: "Poster"
+      href: Project_Poster.html
+    - text: "Report"
+      href: report.html
+    - text: "Maps"
+      href: maps.html
 output: distill::distill_article
 
