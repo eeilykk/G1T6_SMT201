@@ -5,15 +5,15 @@
     "description": "Insert a less than 350 word summary here about motivation, objective, and main feature of application",
     "author": [
       {
-        "name": "Kylie Tan Jia Yun, Teh Rui Ning Shayna, Tan Yeo Shi Lee",
+        "name": "Kylie Tan Jia Yunu, Teh Rui Ning Shayna, Tan Yeo Shi Lee",
         "url": {}
       }
     ],
     "date": "2021-10-09",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
+    "contents": "\r\nusethis\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-10-13T11:18:11+08:00",
-    "input_file": {}
+    "last_modified": "2021-10-13T11:25:20+08:00",
+    "input_file": "welcome.knit.md"
   }
 ]

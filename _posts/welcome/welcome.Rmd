@@ -3,7 +3,7 @@ title: "Welcome to G1T6 GIS Project Website"
 description: | 
         Insert a less than 350 word summary here about motivation, objective, and main feature of application
 author:
-  - name: Kylie Tan Jia Yun, Teh Rui Ning Shayna, Tan Yeo Shi Lee 
+  - name: Kylie Tan Jia Yunu, Teh Rui Ning Shayna, Tan Yeo Shi Lee 
     affiliation: SCIS SMT Major
 date: 10-09-2021
 output:
@@ -21,3 +21,4 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
+usethis
