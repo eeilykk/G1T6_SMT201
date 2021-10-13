@@ -4,6 +4,7 @@ description: |
   SMT201 Project 2021
 output_dir: "_site"
 navbar:
+  search: false
   right:
     - text: "Home"
       href: index.html
@@ -16,6 +17,5 @@ navbar:
       href: report.html
     - text: "Maps"
       href: maps.html
-  search: false 
 output: distill::distill_article
 
