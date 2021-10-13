@@ -1,5 +1,5 @@
 ---
-title: "Project Report"
+title: "Report"
 description: |
   Click on the button below to view our report. 
 ---

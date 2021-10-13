@@ -12,7 +12,7 @@
       ],
       "date": "10-09-2021",
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-12T17:50:56+08:00"
+      "last_modified": "2021-10-13T11:18:15+08:00"
     },
     {
       "path": "maps.html",
@@ -24,26 +24,26 @@
     },
     {
       "path": "Project_Poster.html",
-      "title": "Our Poster",
+      "title": "Poster",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-12T17:50:38+08:00"
+      "last_modified": "2021-10-13T11:18:07+08:00"
     },
     {
       "path": "proposal.html",
-      "title": "Our Proposal",
+      "title": "Proposal",
       "description": "Here, you will find our project proposal   ",
       "author": [],
-      "contents": "\r\nMotivation\r\nObjective\r\nData\r\nScope of Work\r\nProject Schedule\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-12T17:51:07+08:00"
+      "contents": "\r\nMotivation\r\nIn 2019, Indonesia’s president, Joko Widodo announced that his plan to move the national capital from Jakarta, on the island of Java, to the province of East Kalimantan, on Borneo. The relocation is believed to address economic inequality and relieve some of the heavy burden, which has led to serious urban problems - such as intensive floods, air pollution and overcrowding, on Jakarta. Moreover, compared to Jakarta, Kalimantan is located strategically in the centre of Indonesia and close to urban areas.\r\nHowever, the relocation has raised some concerns with environmentalists fearing the relocation will have negative effects on Kalimantan: ecologically damaging the rainforests habitat for wildlife species, notably the remaining orangutan population.\r\nHence, it is important to strategise and identify a suitable area in Kalimantan to build the new capital, such that it would meet the criteria of functioning as a city and as the centre of governance without risking environmental damage to the rainforests and endangering wildlife.\r\nObjective\r\nData\r\nScope of Work\r\nProject Schedule\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-13T11:17:56+08:00"
     },
     {
       "path": "report.html",
-      "title": "Project Report",
+      "title": "Report",
       "description": "Click on the button below to view our report. ",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-12T17:38:35+08:00"
+      "last_modified": "2021-10-13T11:20:09+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
