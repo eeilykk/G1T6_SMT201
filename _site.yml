@@ -16,5 +16,6 @@ navbar:
       href: report.html
     - text: "Maps"
       href: maps.html
+  search: false 
 output: distill::distill_article
 
