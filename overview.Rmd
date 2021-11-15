@@ -22,7 +22,9 @@ In 2019, Indonesia’s president, Joko Widodo announced that his plan to move th
 However, the relocation has raised some concerns with environmentalists fearing the relocation will have negative effects on Kalimantan - ecologically damaging the rainforests habitat for wildlife species, notably the remaining orangutan population (Eliraz, 2020).
 
 Hence, it is important to determine a suitable area in East Kalimantan for the relocation of the capital. Bearing in mind that the new area would meet the criteria of functioning as a capital city and as the centre of governance, without risking environmental damage to the rainforests and endangering wildlife. 
+
 ## 2.2 Objective 
+
 Our team aims to fulfill the following project objectives:
 
 1.Creation of digitised web maps via QGIS to clearly show the different aspects of the study area
@@ -37,7 +39,8 @@ Our team aims to fulfill the following project objectives:
 
 6.Gain experience in using QGIS and project exposure
 
-## 2.3 Data 
+## 2.3 Data
+
 Name                                              |Data Format|Description                                                              | Link
 --------------------------------------------------|-----------|-------------------------------------------------------------------------|---------------
 BATAS DESA DESEMBER 2019 DUKCAPIL KALIMANTAN TIMUR|Shape files|Comprehensive population data of the East Kalimantan Province            |https://drive.google.com/file/d/1aeD6kPAy6Uzzx61Z51mfEI5FQzDCY_kJ/view?usp=drivesdk 
@@ -53,6 +56,7 @@ OSM Buildings                                     |Shape files|Buildings and set
 
 
 ## 2.4 Scope of Work 
+
 Our team was tasked to specifically survey the East Kalimantan Province, which consists of districts and sub-districts from four areas: Kota Balikpapan, Kota Samarinda, Kutai Kartanegara and Penajam Paser Utara in Indonesia and to identify a suitable site in this study area to build the new capital.
 
 ![](PICTURES/Study Area.png)
@@ -100,6 +104,7 @@ Here, we will weigh the above factors over the study area and analyse which area
 
 # 2.5 Project Schedule 
 
+![](compare/gantt.png)
 
 # 3.0 References
 Eliraz, G. (2020, March 28). The many reasons to move Indonesia's capital. The Diplomat. Retrieved November 15, 2021, from https://thediplomat.com/2020/03/the-many-reasons-to-move-indonesias-capital/. 
