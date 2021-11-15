@@ -1,7 +1,8 @@
 ---
 title: "Full Report"
 link:
-  https://smu-my.sharepoint.com/:b:/g/personal/shayna_teh_2020_scis_smu_edu_sg/EXzdpgLNqpxIpPNVOEU-D8sBROIPVTIB4tHYuWaJ_ENqKg?e=EmrMNb
+  - label: full report 
+    url : https://smu-my.sharepoint.com/:b:/g/personal/shayna_teh_2020_scis_smu_edu_sg/EXzdpgLNqpxIpPNVOEU-D8sBROIPVTIB4tHYuWaJ_ENqKg?e=EmrMNb
   
 output:
   distill::distill_article:
