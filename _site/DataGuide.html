@@ -88,24 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>G1T6: Data Guide</title>
 
+  <meta property="description" itemprop="description" content="In this section, you will find our step-by-step guide to achieve a similar analysis."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="G1T6: Data Guide"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="In this section, you will find our step-by-step guide to achieve a similar analysis."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="G1T6"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="G1T6: Data Guide"/>
+  <meta property="twitter:description" content="In this section, you will find our step-by-step guide to achieve a similar analysis."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Data Guide"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Data Guide"]},{"type":"character","attributes":{},"value":["In this section, you will find our step-by-step guide to achieve a similar analysis. \n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2101,7 +2104,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Data Guide","authors":[]}
+{"title":"Data Guide","description":"In this section, you will find our step-by-step guide to achieve a similar analysis.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2130,11 +2133,560 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Data Guide</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>In this section, you will find our step-by-step guide to achieve a similar analysis.</p></p>
 </div>
 
 
 <div class="d-article">
+<p>Before commencing, ensure GIS Map is in EPSG 23845 - click the bottom right button “EPSG” and select the one you want, in this case - DGN95 / Indonesia TM -3 zone 54.1 with EPSG 23845.</p>
+<h1 id="data-compilation-population-data-topographic-data-dem-geological-data-forest-fire-hot-spot-data-buildings-and-settlements-data">1.0 Data Compilation (Population Data, Topographic Data, DEM, Geological Data, Forest Fire Hot Spot Data, Buildings and Settlements Data</h1>
+<ol type="1">
+<li>Download the respective shapefiles from Indonesia Geospasial that covers Kota Balipapan, Kota Samarinda, North Penajam Paser and Kutai Kartanegara Regencies</li>
+<li>Input the shapefiles and raster file into the GIS map</li>
+</ol>
+<h1 id="data-preparation-vector-baseddata">2.0 Data Preparation (Vector-BasedData):</h1>
+<ol type="1">
+<li>Export and “save feature as” all new vector layers into the correct EPSG (EPSG 23845).</li>
+<li>Remove the previous layer</li>
+</ol>
+<p><em>Population Data (Batas Desa &amp; Data Kependudukan Tahun 2019 Seluruh Indonesia):</em> 1. Access the attribute table in the Population Data layer.</p>
+<p>2.Using select by expression, select the following in “KAB_KOTA”: + KOTA BALIKPAPAN + KOTA SAMARINDA</p>
+<ol start="3" type="1">
+<li>Using the same select by expression, select the following in “KECAMATAN”:</li>
+</ol>
+<ul>
+<li>ANGGANA</li>
+<li>LOA JANAN</li>
+<li>LOA KULU</li>
+<li>MARANG KAYU</li>
+<li>MUARA JAWA</li>
+<li>SAMBOJA</li>
+<li>SANGA SANGA</li>
+<li>SEBULU</li>
+<li>TENAGGARONG</li>
+<li>TENGGARONG SEBERANG</li>
+<li>MUARA BADAK</li>
+<li>BABULU</li>
+<li>PENAJAM</li>
+<li>SEPAKU</li>
+<li>WARU
+<center></li>
+</ul>
+<p><img src="GuidePics/GIS%20Task%202/Select%20Study%20Area.png" /></p>
+</center>
+<ol start="4" type="1">
+<li>Export and save the selected features as a new layer. This layer will be the study area.</li>
+</ol>
+<p><img src="GuidePics/GIS%20Task%202/Study%20Area%20Original.png" /></p>
+<ol start="5" type="1">
+<li>Remove the previous layer.</li>
+</ol>
+<h1 id="buidling-settlement-data">2.1 Buidling &amp; Settlement Data</h1>
+<ol type="1">
+<li>From Vector, click Geoprocessing Tools and Clip</li>
+</ol>
+<center>
+<p><img src="GuidePics/GIS%20Task%202/Clip.png" /></p>
+</center>
+<ol start="2" type="1">
+<li>Input building layer 1 as the input layer and the study area as the overlay layer.</li>
+</ol>
+<center>
+<p><img src="GuidePics/GIS%20Task%202/Clip%201.png" /></p>
+</center>
+<ol start="3" type="1">
+<li>Click the tool icon next to the input layer and change the invalid feature filtering to “Do not filter”. Repeat for the overlay layer.</li>
+</ol>
+<center>
+<p><img src="GuidePics/GIS%20Task%202/Clip%202.png" /></p>
+</center>
+<ol start="4" type="1">
+<li><p>Click “Run”.</p></li>
+<li><p>Export and save the feature as a new layer. This layer will be part of all the buildings and settlements within the study area.</p></li>
+<li><p>Remove the previous layer.</p></li>
+<li><p>Repeat steps 1-5 for the other two osm building layers.</p></li>
+<li><p>From Vector, click Data Management Tools and Merge Vector Layers - input all the newly clipped osm building layers.</p>
+<center></li>
+</ol>
+<p><img src="GuidePics/GIS%20Task%202/Merge%20Vector%20Layers.png" /></p>
+</center>
+<ol start="9" type="1">
+<li>Press “Run”</li>
+<li>Export and save the feature as a new layer. This layer will be all the buildings and settlements within the study area.</li>
+</ol>
+<p><img src="GuidePics/GIS%20Task%202/Buildings.png" /></p>
+<ol start="11" type="1">
+<li>Remove previous layer.</li>
+</ol>
+<h3 id="geological-hotspot-data">2.2 Geological &amp; Hotspot Data</h3>
+<ol type="1">
+<li><p>From Vector, click Geoprocessing Tools and Clip</p></li>
+<li><p>Input geological data as the input layer and the study area as the overlay layer.</p></li>
+<li><p>Click the tool icon next to the input layer and change the invalid feature filtering to “Do not filter”. Repeat for the overlay layer.</p></li>
+<li><p>Click “Run”.</p></li>
+<li><p>Export and save the feature as a new layer. This layer will be the geological data within the study area.</p></li>
+<li><p>Remove the previous layer.</p></li>
+<li><p>Repeat steps 1-6 for the hot spot data to obtain the layer with the hot spot data within the study area.</p></li>
+</ol>
+<h1 id="data-preparation-raster-based-data">2.3 Data Preparation (Raster-Based Data)</h1>
+<ol type="1">
+<li>From Raster, click Extraction and Clip Raster by Extent</li>
+</ol>
+<p><img src="GuidePics/GIS%20Task%202/clip%20by%20extent.png" /></p>
+<ol start="2" type="1">
+<li><p>Input DEM as the input layer and the study area as the clipping extent.<br />
+<img src="GuidePics/GIS%20Task%202/DEM%20Clip.png" /></p></li>
+<li><p>Click “Run”</p></li>
+<li><p>Export and save the feature as a new layer. This layer will be the DEM of the study area.</p></li>
+</ol>
+<p><img src="GuidePics/GIS%20Task%202/CURRENT%20DEM.png" /></p>
+<ol start="5" type="1">
+<li>Remove previous layer</li>
+</ol>
+<h3 id="slope-data">2.4 Slope Data</h3>
+<ol type="1">
+<li>From Raster, click Analysis and Slope.</li>
+</ol>
+<p><img src="GuidePics/GIS%20Task%202/Raster1.png" /></p>
+<ol start="2" type="1">
+<li>Input DEM (Study Layer) as input layer.</li>
+</ol>
+<p><img src="GuidePics/GIS%20Task%202/Slope%201.png" /></p>
+<ol start="3" type="1">
+<li><p>Click “Run”</p></li>
+<li><p>Export and save the feature as a new layer. This layer will be the slope of the study area.</p></li>
+</ol>
+<p><img src="GuidePics/GIS%20Task%202/Slope%202.png" /></p>
+<ol start="5" type="1">
+<li>Remove the previous layer.</li>
+</ol>
+<h1 id="data-preparation-wrangling-and-cleaning-task-1">3.0 Data Preparation, Wrangling, and Cleaning (Task 1)</h1>
+<h1 id="population-demographic">3.1 Population &amp; Demographic</h1>
+<h2 id="population-density">3.1.1 Population Density</h2>
+<ol type="1">
+<li>Extract the population layer and study area</li>
+</ol>
+<p><img src="GuidePics/population%20&amp;%20study%20area.png" /></p>
+<ol start="2" type="1">
+<li>Using clip, clip the population layer using study area as a reference.</li>
+</ol>
+<p><img src="GuidePics/clip.png" /></p>
+<p><img src="GuidePics/clip%20settings.png" /></p>
+<ol start="3" type="1">
+<li>Save the clip layer into your geopackage. Name this layer population.</li>
+</ol>
+<p><img src="GuidePics/population.png" /></p>
+<ol start="4" type="1">
+<li>To make the population density map, right click on the population layer and click on properties.</li>
+<li>In properties, go to the tab “Symbology”.</li>
+<li>Under symbology, change “single symbol” to “graduated”. For value, use “Kepadatan” which means density. Use the color ramp blues, greens, or red to show the distribution. Refer to the image below as a guide.</li>
+</ol>
+<p><img src="GuidePics/density.png" /></p>
+<ol start="7" type="1">
+<li>After done, click”apply”. You should get a map similar to the image below</li>
+</ol>
+<p><img src="GuidePics/popdense.png" /></p>
+<h2 id="demographic---young-adult-elderly">3.1.2 Demographic - Young, Adult, Elderly</h2>
+<ol type="1">
+<li>From your geopackage, import 3 other population layers. You should get the same layer as the image below.</li>
+</ol>
+<p><img src="GuidePics/population.png" /></p>
+<ol start="2" type="1">
+<li><p>Open the attribute table, and then field calculator.</p></li>
+<li><p>In the field calculator tab, add a new field called “YOUNG”</p></li>
+<li><p>For field type, input “Whole number (integer)”. For expression, add ages 25 and below. Refer to the image below as a sample.</p></li>
+</ol>
+<p><img src="GuidePics/Field%20YOUNG.png" /></p>
+<ol start="5" type="1">
+<li><p>After done, click ok and save the attribute table.</p></li>
+<li><p>To present the distribution of the young, go to properties → Symbology</p></li>
+<li><p>Under symbology, change “single symbol” to “graduated”. For value, use “YOUNG” which means density. Use the color ramp blues, greens, or red to show the distribution. Refer to the image below as a guide.</p></li>
+</ol>
+<p><img src="GuidePics/YOUNG%20symb.png" /></p>
+<ol start="8" type="1">
+<li>Click apply and you should see a map similar to the map in the image below.</li>
+</ol>
+<p><img src="GuidePics/young%20map.png" /></p>
+<ol start="9" type="1">
+<li>Repeat steps 2 to 8 for ADULT and ELDERLY layer, where ADULT’s age is from U30-U65(inclusive) and ELDERLY’s age is from U70-U75 (inclusive)</li>
+</ol>
+<h1 id="economic-business">3.2 Economic &amp; Business</h1>
+<p>For Economic &amp; Business, the maps which we will be creating are agriculture(Agriladang, Agrishawah, Agri Kebun), industrial sites (industri), mining, financial institutions, recreational, commercial, and manufacturing.</p>
+<h2 id="commerce">3.2.1 Commerce</h2>
+<p>Financial institutions, recreational, commercial, and manufacturing layers will be created from the commerce layer (niaga).</p>
+<ol type="1">
+<li>Insert “Niaga” layer from each of the different regions. There should be 4 in total.</li>
+<li>In your toolbar, go to “Vector” → “Data Management Tools” → “Merge Vector Layers”</li>
+</ol>
+<p><img src="GuidePics/merging_layers.png" /></p>
+<ol start="3" type="1">
+<li><p>In the pop-up, select the 4 niaga layers, one from each region. After which, select the correct EPSG (EPSG 23845). Then click “Run”. You should see a temporary “merge” layer.</p></li>
+<li><p>In your toolbar, go to “select by location”.</p></li>
+<li><p>Under this pop-up, select from the merge layer, and use “STUDY AREA” as an overlay. Make sure that for each layer, we do not skip anything. Refer to the image below for a reference</p></li>
+</ol>
+<p><img src="GuidePics/SBL.png" /></p>
+<p><img src="GuidePics/SBL_filter.png" /></p>
+<ol start="6" type="1">
+<li>Click “Run”</li>
+<li>Right click on the “Merge” layer → “Export” → “Save selected feature as” and save this layer into your geopackage. Name this layer COMMERCE.</li>
+<li>To make the financial institution layer, click on select by expression on the active commerce layer.</li>
+<li>Under expression, follow the inputs in the image below. Click “Select Features” after that.</li>
+</ol>
+<p><img src="GuidePics/financial%20instituition%20selection.png" /></p>
+<ol start="10" type="1">
+<li>Right click on the commerce layer → export → save selected features as → save it into geopackage, naming this layer “Financial Institutions”</li>
+</ol>
+<p>11.For the remaining layers using commerce, just import “Commerce” layer from browser panel and repeat steps 8 to 10, but according to the categories in the table below.</p>
+<p><img src="GuidePics/table1.png" /></p>
+<h2 id="industry-sites">3.2.2 Industry Sites</h2>
+<p>1.For industrial sites, import “industri” from all the regions.</p>
+<p>2.Merge the industri layers using the same method in step 7 of the commerce layer.</p>
+<p>3.Select by location → Select features from “Merged” layer → where the features “Intersect” → By comparing to the features from “STUDY AREA”</p>
+<p>4.Right click on “Merged” layer</p>
+<p>5.Export → Save selected features as “INDUSTRY SITES”</p>
+<h2 id="agriculture-mining">3.2.3 Agriculture &amp; Mining</h2>
+<p>Similar to industry sites, repeat steps 1-2 for the agriculture and mining layer.</p>
+<p>However, for step 1, follow according to the table below for the datasets to import:</p>
+<p><img src="GuidePics/table2.png" /></p>
+<ol type="1">
+<li>After importing datasets, merge the layers respectively</li>
+</ol>
+<p>2.Instead of using “selection by location”, go to toolbar → vector → Geoprocessing tools → Clip</p>
+<p>3.Input layer → Respective merged layer ; Overlay layer → “STUDY AREA” ; Ensure that both setting are set to “Do not Skip”</p>
+<h1 id="infrastructure">3.3 Infrastructure</h1>
+<p>Datasets used for this layer are:</p>
+<p><img src="GuidePics/table3.png" /></p>
+<p>Using Education as an example:</p>
+<ol type="1">
+<li><p>Import Pendidikan from all 4 regions.</p></li>
+<li><p>Merge the 4 layers using the same method as above (Vector → Data Management Tools → Merge Vector Layers)</p></li>
+</ol>
+<p>3.Since they are all point data, we can use the select by location approach. Select by location → Select features from Merged layer → Where the features “Intersect” → By comparing features from “STUDY AREA”</p>
+<ol start="4" type="1">
+<li><p>Click “Run” and this should select those education points that have intersected with the study area.</p></li>
+<li><p>Right click on the merge layer → Export → save selected features → Save into geopackage and name is “EDUCATIONAL”</p></li>
+<li><p>To change symbology, right click on “EDUCATIONAL” layer and select properties</p></li>
+<li><p>In properties pop-up, go to “Symbology” tab</p></li>
+<li><p>Click on “Simple Marker” and change to SVG marker</p></li>
+</ol>
+<p><img src="GuidePics/SVG%20marker.png" /></p>
+<ol start="9" type="1">
+<li>Under SVG browser, select the appropriate icon that you think best represents education</li>
+</ol>
+<p><img src="GuidePics/SVG%20browser.png" /></p>
+<p>10.After selecting, change the size that you deem fit (i.e 5x5)</p>
+<ol start="11" type="1">
+<li><p>After changing the size, click on “Apply” and “Ok” and the changes should be seen on the map.</p></li>
+<li><p>Repeat the above steps for the other layers - Electricity, Water, Public Amenities, Dams.</p></li>
+<li><p>Your final map should look something similar to the image below.</p></li>
+</ol>
+<p><img src="GuidePics/Infrastructure.png" /></p>
+<h1 id="transport-communication">3.4 Transport &amp; Communication</h1>
+<p>Datasets used for this layer:</p>
+<p><img src="GuidePics/table4" /></p>
+<h2 id="transports-telecomms">3.4.1 Transports &amp; Telecomms</h2>
+<p>Using Bus Terminal Layer as an example:</p>
+<ol type="1">
+<li><p>Import TerminalBus_PT from the 4 different regions</p></li>
+<li><p>Merge the 4 layers above using the same method as above. (Vector → Data Management Tools → Merge Vector Layers)</p></li>
+<li><p>Using the select by location approach: Select by location → Select features from Merged layer → Where the features “Intersect” → By comparing features from “STUDY AREA”</p></li>
+<li><p>Right click on merged layer → export → save selected features as → Save into geopackage and name this layer “BUS TERMINAL”</p></li>
+<li><p>To change the symbology, refer back to step 6 to 11 of the infrastructure layer.</p></li>
+<li><p>Repeat these steps for the other 3 layers.</p></li>
+<li><p>Your final map should look like the image below.</p></li>
+</ol>
+<p><img src="GuidePics/TC.png" /></p>
+<h2 id="roads">3.4.2 Roads</h2>
+<ol type="1">
+<li><p>Insert Road layer from each of the different regions. There should be 4 of them.</p></li>
+<li><p>Merge the road layers using the merging method used above</p></li>
+<li><p>Using the Clip method (Toolbar → Vector → Geoprocessing Tools → Clip), clip the merged layer using STUDY AREA as an overlay area. Ensure that settings is set to “Do not filter”, similar to the image below.</p></li>
+</ol>
+<p><img src="GuidePics/SBL_filter.png" /></p>
+<ol start="4" type="1">
+<li><p>Click “Run” and you should get a temporary layer called “Clipped” in the layer panel.</p></li>
+<li><p>Save that layer into your geopackage and name it ROADS.</p></li>
+</ol>
+<h1 id="environmental-hazards">3.5 Environmental &amp; Hazards</h1>
+<p>Datasets to be imported &amp; used for each layer :</p>
+<p><img src="GuidePics/table5.png" /></p>
+<p>Using Non-Agriculture Land as an example:</p>
+<ol type="1">
+<li><p>Import non-agri aland, non-agri hutan basah, non-agri belukar from each of the 4 regions.</p></li>
+<li><p>Merge these layers using the merge layer used for the previous layers</p></li>
+<li><p>Being an area datatype, we will be using the Clip approach.</p></li>
+<li><p>Clip approach: Toolbar → Vector → Geoprocessing Tools → Clip</p></li>
+<li><p>In the clip pop-up, input layer → Merged layer, overlay layer → STUDY AREA. Ensure that the settings for both layers are set to “Do Not Skip”, similar to the previous layers</p></li>
+<li><p>After clipping, saved the temporary clipped layer by right clicking on the clipped layer → Export → Save layer as → Save into the geopackage and name this layer as “NON AGRICULTURE LAND”</p></li>
+<li><p>(Only for non-agriculture land layer) To differentiate the different non-agriculture land, right click on the NON AGRICULTURE LAND → properties → symbology tab</p></li>
+<li><p>Under symbology tab, change single symbol to categorized, value → layer, Color ramp → random colours</p></li>
+<li><p>Then click classify &amp; apply. Refer to image below as reference.</p></li>
+</ol>
+<p><img src="GuidePics/non-agri%20land.png" /></p>
+<ol start="10" type="1">
+<li>Repeat steps 1 to 6 for the other layers including coastline even though it is a line datatype.</li>
+</ol>
+<h1 id="geology">3.6 Geology</h1>
+<ol type="1">
+<li><p>Using the geology layer already made, right click on the layer → Properties</p></li>
+<li><p>In the properties pop-up, go to the symbology tab.</p></li>
+<li><p>Change single symbol to Categorized, value → CLASS_LITH, color ramp → random colors</p></li>
+</ol>
+<p><img src="GuidePics/Geology.png" /></p>
+<ol start="4" type="1">
+<li>Click “Classify” and apply. You should get a map similar to the image below</li>
+</ol>
+<p><img src="GuidePics/geology%20map.png" /></p>
+<h1 id="topography">3.7 Topography</h1>
+<ol type="1">
+<li><p>Duplicate the DEM (STUDY AREA) layer and name this layer DEM (STUDY AREA) COLORED</p></li>
+<li><p>Right click on the layer → Properties</p></li>
+<li><p>In the properties pop-up, go to the symbology tab.</p></li>
+<li><p>Change render type to Singleband pseudocolor</p></li>
+<li><p>Change color ramp to spectral and invert color ramp</p></li>
+</ol>
+<p><img src="GuidePics/toporamp.png" /></p>
+<ol start="6" type="1">
+<li>Click “Classify” and apply. You should get a map similar to the image below</li>
+</ol>
+<p><img src="Topography/Topography.png" /></p>
+<ol start="7" type="1">
+<li><p>Download and click on plugin Qgis2threejs. Ensure DEM (STUDY AREA) COLORED is ticked with the study area border.</p></li>
+<li><p>From Scene, click on Scene Settings</p></li>
+<li><p>Within the scene setting dialog box, write “20” in vertical exaggeration</p></li>
+<li><p>Click apply and you should have a map as seen below.</p></li>
+</ol>
+<p><img src="Topography/Topography%20Side.png" /></p>
+<h1 id="data-preparation-wrangling-task-2">4.0 Data Preparation &amp; Wrangling (Task 2)</h1>
+<h1 id="layers-used-for-site-selection">4.1 Layers used for Site Selection</h1>
+<ul>
+<li>Raster
+<ul>
+<li>Slope</li>
+</ul></li>
+<li>Vector
+<ul>
+<li>Coastline</li>
+<li>Rivers</li>
+<li>Buildings</li>
+<li>Forests</li>
+<li>Hotspots</li>
+<li>Roads</li>
+<li>Airports</li>
+<li>Seaports</li>
+</ul></li>
+</ul>
+<h1 id="rasterization-of-vector-layer">4.2 Rasterization of Vector Layer</h1>
+<ol type="1">
+<li><p>Click on Coastline Layer</p></li>
+<li><p>From the icon bar, click on Open Attribute Table icon</p></li>
+<li><p>Click on Open field calculator icon</p></li>
+<li><p>Within the Field Calculator dialog window: <em>Type “POI_CODE” under Output field </em>At the Expression pane, type 1 *Click “OK”. There will be a new field called POI_CODE added onto the attribute table of the coastline GIS layer.</p></li>
+<li><p>From Raster, select Conversion and Rasterise (Vector to Raster)</p></li>
+</ol>
+<p><img src="GIS%20Task%202/Raster1.png" /></p>
+<ol start="6" type="1">
+<li>Within the Raster (Vector to Raster) dialog window:</li>
+</ol>
+<p>*For Input layer, select Coastline</p>
+<p>*For Field to use for a burn-in value, select POI_CODE</p>
+<p>*For Output raster size units, select Georeferenced units</p>
+<p>*Keep both horizontal and vertical resolutions at 5</p>
+<p>*For output extent, click on Calculate from Layer and select DEM (Study Area)</p>
+<p>*Click Run</p>
+<p>*Close</p>
+<p><img src="GIS%20Task%202/raster2.png" /></p>
+<ol start="7" type="1">
+<li><p>Export and save the feature as a new layer as raster_coastlines. This layer will be the rasterized coastline in the study area.</p></li>
+<li><p>Remove the previous layer.</p></li>
+<li><p>Repeat steps 1 to 8 with the other vector layers. See an example of raster_river below:</p></li>
+</ol>
+<p><img src="GIS%20Task%202/raster%20river.png" /></p>
+<h1 id="proximity-of-layers">4.3 Proximity of Layers</h1>
+<p>1.From Raster, select Analysis and Proximity (Raster Distance).</p>
+<p><img src="GIS%20Task%202/proximity1.png" /></p>
+<ol start="2" type="1">
+<li>Within the Proximity (Raster Distance) dialog window: <em>For Input layer, select raster_coastlines. </em>For Distance units, select Georeferenced coordinates. <em>For Output data type, select Float32. </em>Click Run.</li>
+</ol>
+<p><img src="GIS%20Task%202/proximity2.png" /></p>
+<ol start="3" type="1">
+<li>Export and save the feature as a new layer as prox_coastlines. This layer will indicate distance away from the coastline in metres as seen below.</li>
+</ol>
+<p><img src="GIS%20Task%202/factor%20coastline.png" /></p>
+<ol start="4" type="1">
+<li>Remove the previous layer.</li>
+<li>Repeat steps 1 to 4 with the other rasterized vector layers.</li>
+</ol>
+<h1 id="site-selection-using-gis-multiple-criteria-decision-analysis">4.4 Site Selection using GIS Multiple-Criteria Decision Analysis</h1>
+<ol type="1">
+<li>From Processing, click Toolbox.</li>
+</ol>
+<p>2.Search and click for Raster Calculator.</p>
+<p>3.Under expression, use the formula below to calculate the z-score of the coastline proximity layer. You can find the minimum and maximum from properties of the proximity layer. If there is a preference for distances closer to the feature in the layer, do the formula below but with min(x) and max(x) swapped.</p>
+<p>4.Under the Reference Layer, input DEM (Study Area).</p>
+<p><img src="GuidePics/formula.png" /></p>
+<p><img src="GIS%20Task%202/road%20calculator.png" /></p>
+<ol start="5" type="1">
+<li><p>Click “Run”</p></li>
+<li><p>Export and save the feature as a new layer as factor_coastlines. This layer will indicate z-score away from the coastline in metres.</p></li>
+<li><p>Remove the previous layer.</p></li>
+<li><p>Repeat steps 1 to 5 with the other proximity layers including slope DEM.</p></li>
+</ol>
+<h1 id="ahp-analysis">4.5 AHP Analysis</h1>
+<ol type="1">
+<li><p>Download the AHP template from <a href="https://www.scbuk.com/ahp.html" class="uri">https://www.scbuk.com/ahp.html</a></p></li>
+<li><p>Input n = 9 since we will be using 9 factors</p></li>
+<li><p>Weigh the importance of the factors in the pairwise comparison matrix</p></li>
+</ol>
+<p><img src="GIS%20Task%202/AHP%20Site%20Suitability.png" /></p>
+<ol start="4" type="1">
+<li>Ensure the consistency is below 10% to confirm the AHP analysis as valid</li>
+</ol>
+<p><img src="GIS%20Task%202/AHP%20Consistency%20Check.png" /></p>
+<h1 id="ahp-suitability">4.6 AHP Suitability</h1>
+<ol type="1">
+<li><p>Use the Raster Calculator</p></li>
+<li><p>Under expression, sum up the factor layers multiplied with its respective weightage as noted in the AHP</p></li>
+<li><p>Under the Reference Layer, input DEM (Study Area).</p></li>
+</ol>
+<p><img src="GIS%20Task%202/sum.png" /></p>
+<ol start="4" type="1">
+<li><p>Click Run.</p></li>
+<li><p>Export and save the feature as a new layer as AHP_Suitability. This layer will show grids where values closer to 1 are more suitable than locations with values closer to 0.</p></li>
+</ol>
+<p><img src="GIS%20Task%202/8%20AHP%20Suitability.png" /></p>
+<ol start="6" type="1">
+<li>Remove previous layer</li>
+</ol>
+<h1 id="identifying-suitable-sites">4.7 Identifying Suitable Sites</h1>
+<ol type="1">
+<li>From Processing, click Toolbox.</li>
+<li>Search and click for Reclassify by Table.</li>
+<li>Within the Reclassify by Table dialog box:</li>
+</ol>
+<ul>
+<li>For Raster Layer, select AHP_Suitability</li>
+<li>For the Reclassification table, click on the icon. Within the Fixed table dialog box:
+<ul>
+<li>Enter the value similar to the screenshot below</li>
+<li>Click OK</li>
+</ul></li>
+</ul>
+<center>
+<figure>
+<img src="GIS%20Task%202/reclassify1.png" alt="This is based on a recommendation of a senior planner on how the selected site should have at least a composite factor score of 0.5." /><figcaption aria-hidden="true">This is based on a recommendation of a senior planner on how the selected site should have at least a composite factor score of 0.5.</figcaption>
+</figure>
+</center>
+<p><em>For Range boundaries, select min &lt;= value &lt; max </em>For Output data type, select Float32. *Click Run</p>
+<p><img src="GIS%20Task%202/reclassify2.png" /></p>
+<p>4.Export and save the feature as a new layer as MCDA_model. This layer will show the suitable sites and not suitable sites, where the white areas are suitable and black areas are unsuitable.</p>
+<p><img src="GIS%20Task%202/7%20MCDA%20Model.png" /></p>
+<ol start="5" type="1">
+<li>Remove the previous layer.</li>
+</ol>
+<h1 id="vectorise-suitable-sites">4.8 Vectorise Suitable Sites</h1>
+<ol type="1">
+<li>From Raster, select Conversion and Polygonize (Raster to Vector)</li>
+</ol>
+<p><img src="GIS%20Task%202/polygonize1.png" /></p>
+<ol start="2" type="1">
+<li>Within the Polygonize (Raster to Vector) dialog box: <em>For Input Layer, select AHP_Suitability. </em>For Name of the field to create, type Sites. <em>Keep the checkbox in front of Use 8-connectedness uncheck. </em>Click Run</li>
+</ol>
+<p><img src="GIS%20Task%202/polygonize2.png" /></p>
+<ol start="3" type="1">
+<li>Export and save the feature as a new layer as Vectorised Model. This layer will show the suitable sites and not suitable sites.</li>
+</ol>
+<p><img src="GIS%20Task%202/6%20Vectorised%20Model.png" /></p>
+<ol start="4" type="1">
+<li>Remove the previous layer.</li>
+</ol>
+<h1 id="choosing-final-site-vectorised-model">4.9 Choosing Final Site (Vectorised Model)</h1>
+<ol type="1">
+<li><p>Open the attribute table of the Vectorised Model</p></li>
+<li><p>Using Select by Expression, select areas where sites = 1.</p></li>
+<li><p>Deselect areas not within the study area.</p></li>
+<li><p>Export and save the selected feature as a new layer as All Suitable Sites. This layer will show the suitable sites</p></li>
+</ol>
+<p><img src="GIS%20Task%202/ASS.png" /></p>
+<ol start="5" type="1">
+<li>From Processing, click Toolbox.</li>
+</ol>
+<p>6.Search and click for Fix Geometries.</p>
+<ol start="7" type="1">
+<li>Within the Fix Geometries Dialog Box:</li>
+</ol>
+<ul>
+<li>Input All Suitable Sites as the input layer.</li>
+<li>Click Run</li>
+</ul>
+<p><img src="GIS%20Task%202/fix1.png" /></p>
+<ol start="8" type="1">
+<li><p>Export and save the feature as a new layer to replace All Suitable Sites.</p></li>
+<li><p>Remove the previous layer.</p></li>
+</ol>
+<p>10.From Vector, click Geoprocessing Tools and Clip</p>
+<p>11.Input All Suitable Sites as the input layer and the study area as the overlay layer.</p>
+<ol start="12" type="1">
+<li><p>Click the tool icon next to the input layer and change the invalid feature filtering to “Do not filter”. Repeat for the overlay layer.</p></li>
+<li><p>Click “Run”.</p></li>
+<li><p>Export and save the feature as a new layer as Potential Sites. This layer will be the suitable sites within the study area.</p></li>
+</ol>
+<p><img src="GIS%20Task%202/4%20Potential%20Sites.png" /></p>
+<ol start="15" type="1">
+<li>Remove the previous layer.</li>
+</ol>
+<h2 id="choosing-final-site-subzones">4.9.1 Choosing Final Site (Subzones)</h2>
+<p>1.Click on Select by Location. 2.From the Select by Location dialog box: + Select features from “Study Area” + Tick “are within” + By comparing to the features from “Potential Sites” + Click Run</p>
+<p><img src="GIS%20Task%202/Study%20Area%20x%20Potential%20Sites.png" /></p>
+<ol start="3" type="1">
+<li>Export and save the feature as a new layer as Potential Sites. This layer will be the suitable subzones within the study area.</li>
+</ol>
+<p><img src="GIS%20Task%202/3%20Potential%20Final%20Sites%20(Area%20not%20taken%20into%20account).png" /></p>
+<ol start="4" type="1">
+<li><p>Remove the previous layer.</p></li>
+<li><p>From Project, click Properties.</p></li>
+<li><p>Under General, change the units for area measurement to hectares.</p></li>
+</ol>
+<p><img src="GIS%20Task%202/hectares.png" /></p>
+<ol start="7" type="1">
+<li><p>Click apply.</p></li>
+<li><p>Click on the Potential Final Sites layer.</p></li>
+<li><p>From the icon bar, click on Open Attribute Table icon</p></li>
+<li><p>Click on Open field calculator icon</p></li>
+<li><p>Within the Field Calculator dialog window:</p></li>
+</ol>
+<ul>
+<li>Type “AREA” under Output field</li>
+<li>At the Expression pane, type $area</li>
+</ul>
+<p><img src="GIS%20Task%202/Area.png" /></p>
+<ol start="12" type="1">
+<li>Click “OK”. There will be a new field called AREA added onto the attribute table which indicates the area of the different potential subzones in hectares.</li>
+</ol>
+<p><img src="GIS%20Task%202/area1.png" /></p>
+<ol start="13" type="1">
+<li><p>From there, use select by expression.</p></li>
+<li><p>Under expression, write down the following to find subzones that fit the required area size.</p></li>
+</ol>
+<p><img src="GIS%20Task%202/area2.png" /></p>
+<ol start="15" type="1">
+<li>Export and save the feature as a new layer as Final Site Choices. This layer will show the final subzone sites that fit all criteria including the required area.</li>
+</ol>
+<p><img src="GIS%20Task%202/2%20Final%20Site%20Choices.png" /></p>
+<ol start="16" type="1">
+<li>As both subzones are relatively in the same location, we chose the one with the larger size. Hence, we selected Prangat Selatan.</li>
+</ol>
+<p><img src="GIS%20Task%202/area3.png" /></p>
+<p><img src="GIS%20Task%202/area4.png" /></p>
+<ol start="17" type="1">
+<li><p>From there, use select by expression.</p></li>
+<li><p>Under expression, choose the subzone with Desa = Prangat Selatan.</p></li>
+<li><p>Export and save the feature as a new layer as Final Site. This layer will show the final site we chose to put the new capital city which is Prangat Selatan.</p></li>
+</ol>
+<p><img src="GIS%20Task%202/1%20Final%20Site.png" /></p>
+<ol start="20" type="1">
+<li>Remove the previous layer.</li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
