@@ -1,7 +1,5 @@
 ---
 title: "Full Report"
-description: |
-  This is our full report.
 output:
   distill::distill_article:
     self_contained: false
@@ -11,24 +9,5 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-### Motivation 
- 
-In 2019, Indonesia’s president, Joko Widodo announced that his plan to move the national capital from Jakarta, on the island of Java, to the province of East Kalimantan, on Borneo. The relocation is believed to address economic inequality and relieve some of the heavy burden, which has led to serious urban problems - such as intensive floods, air pollution and overcrowding, on Jakarta. Moreover, compared to Jakarta, Kalimantan is located strategically in the centre of Indonesia and close to urban areas.
-
-However, the relocation has raised some concerns with environmentalists fearing the relocation will have negative effects on Kalimantan: ecologically damaging the rainforests habitat for wildlife species, notably the remaining orangutan population.
-
-Hence, it is important to strategise and identify a suitable area in Kalimantan to build the new capital, such that it would meet the criteria of functioning as a city and as the centre of governance without risking environmental damage to the rainforests and endangering wildlife.
-
-
-
-### Objective 
-
-
-
-### Data 
-
-
-### Scope of Work 
-
-
-### Project Schedule
+## Link to our full report
+https://smu-my.sharepoint.com/:b:/g/personal/shayna_teh_2020_scis_smu_edu_sg/EXzdpgLNqpxIpPNVOEU-D8sBROIPVTIB4tHYuWaJ_ENqKg?e=EmrMNb
