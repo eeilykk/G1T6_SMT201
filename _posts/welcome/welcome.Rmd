@@ -1,11 +1,11 @@
 ---
-title: "Welcome to G1T6 GIS Project Website"
+title: "SMT201 G1T6 Project Website"
 description: | 
-        This website comprises of our research and data analysis for a project in the module SMT201 under Prof.Kam Tin Seong. 
+        "Welcome to the home page of our project website for SMT201 Geographic Information Systems for Urban Planning." 
 author:
-  - name: Kylie Tan Jia Yunu, Teh Rui Ning Shayna, Tan Yeo Shi Lee 
+  - name: Kylie Tan Jia Yun, Teh Rui Ning Shayna, Tan Yeo Shi Lee 
     affiliation: SCIS SMT Major
-date: 10-09-2021
+date: 15-22-2021
 output:
   distill::distill_article:
     self_contained: false
