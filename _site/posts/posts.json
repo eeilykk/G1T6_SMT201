@@ -2,7 +2,7 @@
   {
     "path": "posts/welcome/",
     "title": "Welcome to G1T6 GIS Project Website",
-    "description": "Insert a less than 350 word summary here about motivation, objective, and main feature of application",
+    "description": "This website comprises of our research and data analysis for a project in the module SMT201 under Prof.Kam Tin Seong.",
     "author": [
       {
         "name": "Kylie Tan Jia Yunu, Teh Rui Ning Shayna, Tan Yeo Shi Lee",
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\r\nusethis\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-10-13T11:49:16+08:00",
+    "last_modified": "2021-11-15T16:09:41+08:00",
     "input_file": {}
   }
 ]

@@ -6,17 +6,18 @@ output_dir: "_site"
 theme: theme.css
 navbar:
   search: false
-  right:
-    - text: "Home"
-      href: index.html
   left:
-    - text: "Proposal"
-      href: proposal.html
+    - text: "Overview"
+      href: overview.html
     - text: "Poster"
       href: Project_Poster.html
+    - text: "Data Guide"
+      href: dataguide.html
     - text: "Report of Survery"
       href: task1.html
-    - text: "Site Selection Report"
-      href: task2.html
+    - text: "Site Selection"
+      href: siteselection.html
+    - text: "Full Report"
+      href: fullreport.html
 output: distill::distill_article
 

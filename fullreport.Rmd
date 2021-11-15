@@ -1,7 +1,7 @@
 ---
-title: "Proposal"
+title: "Full Report"
 description: |
-  Here, you will find our project proposal   
+  This is our full report.
 ---
 
 ```{r setup, include=FALSE}

@@ -1,33 +1,55 @@
 {
   "articles": [
     {
+      "path": "DataGuide.html",
+      "title": "Data Guide",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T16:21:57+08:00"
+    },
+    {
+      "path": "fullreport.html",
+      "title": "Full Report",
+      "description": "This is our full report.",
+      "author": [],
+      "contents": "\r\nMotivation\r\nIn 2019, Indonesia’s president, Joko Widodo announced that his plan to move the national capital from Jakarta, on the island of Java, to the province of East Kalimantan, on Borneo. The relocation is believed to address economic inequality and relieve some of the heavy burden, which has led to serious urban problems - such as intensive floods, air pollution and overcrowding, on Jakarta. Moreover, compared to Jakarta, Kalimantan is located strategically in the centre of Indonesia and close to urban areas.\r\nHowever, the relocation has raised some concerns with environmentalists fearing the relocation will have negative effects on Kalimantan: ecologically damaging the rainforests habitat for wildlife species, notably the remaining orangutan population.\r\nHence, it is important to strategise and identify a suitable area in Kalimantan to build the new capital, such that it would meet the criteria of functioning as a city and as the centre of governance without risking environmental damage to the rainforests and endangering wildlife.\r\nObjective\r\nData\r\nScope of Work\r\nProject Schedule\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T16:23:33+08:00"
+    },
+    {
       "path": "index.html",
-      "title": "G1T6",
-      "description": "Insert a less than 350 word summary here about motivation, objective, and main feature of application\n",
+      "title": "Welcome to G1T6 project website:)",
+      "description": "This website comprises of our research and data analysis for a project in the module SMT201 under Prof.Kam Tin Seong.\n",
       "author": [
         {
-          "name": "Kylie Tan, Shayna Teh, Yeoshi",
+          "name": "Kylie Tan Jia Yun, Teh Rui Ning Shayna, Tan Yeo Shi Lee",
           "url": {}
         }
       ],
       "date": "10-09-2021",
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-13T11:49:17+08:00"
+      "last_modified": "2021-11-15T16:24:35+08:00"
+    },
+    {
+      "path": "overview.html",
+      "title": "Overview",
+      "author": [],
+      "contents": "\r\nR Markdown\r\n\r\n## Including Plots\r\n\r\nYou can also embed plots, for example:\r\n\r\n<div class=\"layout-chunk\" data-layout=\"l-body\">\r\n<img src=\"overview_files/figure-html5/pressure-1.png\" width=\"624\" />\r\n\r\n<\/div>\r\n\r\n\r\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\r\n```{.r .distill-force-highlighting-css}\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T16:20:13+08:00"
     },
     {
       "path": "Project_Poster.html",
       "title": "Poster",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-13T11:49:42+08:00"
+      "last_modified": "2021-11-15T16:20:35+08:00"
     },
     {
-      "path": "proposal.html",
-      "title": "Proposal",
-      "description": "Here, you will find our project proposal   ",
+      "path": "siteselection.html",
+      "title": "Site Selection Report",
+      "description": "Task 2 ",
       "author": [],
-      "contents": "\r\nMotivation\r\nIn 2019, Indonesia’s president, Joko Widodo announced that his plan to move the national capital from Jakarta, on the island of Java, to the province of East Kalimantan, on Borneo. The relocation is believed to address economic inequality and relieve some of the heavy burden, which has led to serious urban problems - such as intensive floods, air pollution and overcrowding, on Jakarta. Moreover, compared to Jakarta, Kalimantan is located strategically in the centre of Indonesia and close to urban areas.\r\nHowever, the relocation has raised some concerns with environmentalists fearing the relocation will have negative effects on Kalimantan: ecologically damaging the rainforests habitat for wildlife species, notably the remaining orangutan population.\r\nHence, it is important to strategise and identify a suitable area in Kalimantan to build the new capital, such that it would meet the criteria of functioning as a city and as the centre of governance without risking environmental damage to the rainforests and endangering wildlife.\r\nObjective\r\nData\r\nScope of Work\r\nProject Schedule\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T15:52:49+08:00"
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T16:23:13+08:00"
     },
     {
       "path": "task1.html",
@@ -36,14 +58,6 @@
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
       "last_modified": "2021-11-15T15:53:23+08:00"
-    },
-    {
-      "path": "task2.html",
-      "title": "Site Selection Report",
-      "description": "Task 2 ",
-      "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T15:53:20+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
