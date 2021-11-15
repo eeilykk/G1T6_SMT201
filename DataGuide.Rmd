@@ -108,7 +108,7 @@ Before commencing, ensure GIS Map is in EPSG 23845 - click the bottom right butt
 11. Remove previous layer. 
 
 
-### 2.2 Geological & Hotspot Data
+# 2.2 Geological & Hotspot Data
 
 1. From Vector, click Geoprocessing Tools and Clip
 
@@ -125,6 +125,7 @@ Before commencing, ensure GIS Map is in EPSG 23845 - click the bottom right butt
 7. Repeat steps 1-6 for the hot spot data to obtain the layer with the hot spot data within the study area.
 
 # 2.3 Data Preparation (Raster-Based Data) 
+
 1. From Raster, click Extraction and Clip Raster by Extent
 
 ![](GuidePics/GIS Task 2/clip by extent.png)
@@ -139,7 +140,8 @@ Before commencing, ensure GIS Map is in EPSG 23845 - click the bottom right butt
 
 5. Remove previous layer 
 
-### 2.4 Slope Data 
+# 2.4 Slope Data
+
 1. From Raster, click Analysis and Slope.
 
 ![](GuidePics/GIS Task 2/Raster1.png)
