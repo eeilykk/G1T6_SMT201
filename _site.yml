@@ -3,6 +3,7 @@ title: "G1T6" #title changes the left hand corner of the website
 description: |
   SMT201 Project 2021
 output_dir: "_site"
+theme: theme.css
 navbar:
   search: false
   right:
@@ -13,9 +14,9 @@ navbar:
       href: proposal.html
     - text: "Poster"
       href: Project_Poster.html
-    - text: "Report"
+    - text: "Report of Survery"
       href: report.html
-    - text: "Maps"
-      href: maps.html
+    - text: "Site Selection Report"
+      href: siteselection.html
 output: distill::distill_article
 

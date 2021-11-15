@@ -12,22 +12,14 @@
       ],
       "date": "10-09-2021",
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-13T11:38:34+08:00"
-    },
-    {
-      "path": "maps.html",
-      "title": "Maps",
-      "description": "These are the maps we have created. ",
-      "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-13T11:38:35+08:00"
+      "last_modified": "2021-10-13T11:49:17+08:00"
     },
     {
       "path": "Project_Poster.html",
       "title": "Poster",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-13T11:38:36+08:00"
+      "last_modified": "2021-10-13T11:49:42+08:00"
     },
     {
       "path": "proposal.html",
@@ -35,15 +27,23 @@
       "description": "Here, you will find our project proposal   ",
       "author": [],
       "contents": "\r\nMotivation\r\nIn 2019, Indonesia’s president, Joko Widodo announced that his plan to move the national capital from Jakarta, on the island of Java, to the province of East Kalimantan, on Borneo. The relocation is believed to address economic inequality and relieve some of the heavy burden, which has led to serious urban problems - such as intensive floods, air pollution and overcrowding, on Jakarta. Moreover, compared to Jakarta, Kalimantan is located strategically in the centre of Indonesia and close to urban areas.\r\nHowever, the relocation has raised some concerns with environmentalists fearing the relocation will have negative effects on Kalimantan: ecologically damaging the rainforests habitat for wildlife species, notably the remaining orangutan population.\r\nHence, it is important to strategise and identify a suitable area in Kalimantan to build the new capital, such that it would meet the criteria of functioning as a city and as the centre of governance without risking environmental damage to the rainforests and endangering wildlife.\r\nObjective\r\nData\r\nScope of Work\r\nProject Schedule\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-13T11:38:37+08:00"
+      "last_modified": "2021-11-15T15:52:49+08:00"
     },
     {
-      "path": "report.html",
-      "title": "Report",
-      "description": "Click on the button below to view our report. ",
+      "path": "task1.html",
+      "title": "Report of Survey",
+      "description": "Task 1 ",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-13T11:38:38+08:00"
+      "last_modified": "2021-11-15T15:53:23+08:00"
+    },
+    {
+      "path": "task2.html",
+      "title": "Site Selection Report",
+      "description": "Task 2 ",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T15:53:20+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
