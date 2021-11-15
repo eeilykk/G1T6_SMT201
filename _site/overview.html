@@ -18,6 +18,72 @@
  <!--radix_placeholder_import_source-->
  <!--/radix_placeholder_import_source-->
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
 
   <!--radix_placeholder_meta_tags-->
   <title>G1T6: Overview</title>
@@ -2047,8 +2113,8 @@
 <a href="overview.html">Overview</a>
 <a href="Project_Poster.html">Poster</a>
 <a href="dataguide.html">Data Guide</a>
-<a href="task1.html">Report of Survery</a>
-<a href="task2.html">Site Selection</a>
+<a href="reportofsurvey.html">Report of Survery</a>
+<a href="siteselection.html">Site Selection</a>
 <a href="fullreport.html">Full Report</a>
 </div>
 <div class="nav-right">
@@ -2069,20 +2135,134 @@
 
 
 <div class="d-article">
-<h2 id="r-markdown">R Markdown</h2>
-<pre><code>
-## Including Plots
-
-You can also embed plots, for example:
-
-&lt;div class=&quot;layout-chunk&quot; data-layout=&quot;l-body&quot;&gt;
-&lt;img src=&quot;overview_files/figure-html5/pressure-1.png&quot; width=&quot;624&quot; /&gt;
-
-&lt;/div&gt;
-
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-```{.r .distill-force-highlighting-css}</code></pre>
+<h1 id="introduction">1.0 Introduction</h1>
+<p>In 2019, Indonesia’s president, Joko Widodo announced that his plan to move the national capital from Jakarta to the province of East Kalimantan. This relocation is to address economic inequality and relieve some of Jakarta’s serious urban problems. However, there have been doubts about whether this relocation plan will solve Jakarta’s problems and concerns surrounding the impact of relocation on Kalimantan. Our team aims to create digistised web maps via QGIS and analyse the geospatial patterns through various methods of analysis, to determine and recommend a suitable site for the relocation of the capital city.</p>
+<h1 id="project-proposal">2.0 Project Proposal</h1>
+<h2 id="motivation">2.1 Motivation</h2>
+<p>In 2019, Indonesia’s president, Joko Widodo announced that his plan to move the national capital from Jakarta, on the island of Java, to the province of East Kalimantan, on Borneo. The relocation is believed to address economic inequality and relieve some of the heavy burden, which has led to serious urban problems - such as intensive floods, air pollution and overcrowding, on Jakarta (The Guardian, 2019). Moreover, compared to Jakarta, Kalimantan is located strategically in the centre of Indonesia and close to urban areas.</p>
+<p>However, the relocation has raised some concerns with environmentalists fearing the relocation will have negative effects on Kalimantan - ecologically damaging the rainforests habitat for wildlife species, notably the remaining orangutan population (Eliraz, 2020).</p>
+<p>Hence, it is important to determine a suitable area in East Kalimantan for the relocation of the capital. Bearing in mind that the new area would meet the criteria of functioning as a capital city and as the centre of governance, without risking environmental damage to the rainforests and endangering wildlife. ## 2.2 Objective Our team aims to fulfill the following project objectives:</p>
+<p>1.Creation of digitised web maps via QGIS to clearly show the different aspects of the study area</p>
+<p>2.Analysis of geospatial patterns in the compilation of maps created</p>
+<p>3.Integration of GIS and multi-criteria evaluation methods to perform site suitability analysis</p>
+<p>4.Discussion of method of analysis when weighing the different aspects for site suitability</p>
+<p>5.Providing a recommendation of a suitable site for the relocation of the capital city</p>
+<p>6.Gain experience in using QGIS and project exposure</p>
+<h2 id="data">2.3 Data</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 7%" />
+<col style="width: 48%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Data Format</th>
+<th>Description</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BATAS DESA DESEMBER 2019 DUKCAPIL KALIMANTAN TIMUR</td>
+<td>Shape files</td>
+<td>Comprehensive population data of the East Kalimantan Province</td>
+<td><a href="https://drive.google.com/file/d/1aeD6kPAy6Uzzx61Z51mfEI5FQzDCY_kJ/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/1aeD6kPAy6Uzzx61Z51mfEI5FQzDCY_kJ/view?usp=drivesdk</a></td>
+</tr>
+<tr class="even">
+<td>KOTA_BALIKPAPAN</td>
+<td>Shape files</td>
+<td>Comprehensive collection of topographic data layers of Kota Balikpapan</td>
+<td><a href="https://drive.google.com/file/d/1VgxlToSH1auqApEgh_jAW06DKlBy67Bh/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/1VgxlToSH1auqApEgh_jAW06DKlBy67Bh/view?usp=drivesdk</a></td>
+</tr>
+<tr class="odd">
+<td>KOTASAMARINDA</td>
+<td>Shape files</td>
+<td>Comprehensive collection of topographic data layers of Kota Samarinda</td>
+<td><a href="https://drive.google.com/file/d/12kiqmm_wsyjc2-pqNO2e8TM_c-fMeTAk/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/12kiqmm_wsyjc2-pqNO2e8TM_c-fMeTAk/view?usp=drivesdk</a></td>
+</tr>
+<tr class="even">
+<td>PENAJAMPASERUTARA</td>
+<td>Shape files</td>
+<td>Comprehensive collection of topographic data layers of Penajam Paser Utara</td>
+<td><a href="https://drive.google.com/file/d/1SkS3y_pF7avPfvNTft7RK5W3p4fJ2KEr/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/1SkS3y_pF7avPfvNTft7RK5W3p4fJ2KEr/view?usp=drivesdk</a></td>
+</tr>
+<tr class="odd">
+<td>KUTAITARTANEGARA</td>
+<td>Shape files</td>
+<td>Comprehensive collection of topographic data layers of Kutai Kartanegara</td>
+<td><a href="https://drive.google.com/file/d/1EfoR3qJEX1qX5d4tUOGFLhEaSxa4Du1o/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/1EfoR3qJEX1qX5d4tUOGFLhEaSxa4Du1o/view?usp=drivesdk</a></td>
+</tr>
+<tr class="even">
+<td>30. Provinsi Kalimantan Timur</td>
+<td>TIF File</td>
+<td>Digital elevation model of the East Kalimantan Province at 30m resolution</td>
+<td><a href="https://drive.google.com/file/d/1-LIP45j41T7psyy1gUvJBaj-MSWb9rK1/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/1-LIP45j41T7psyy1gUvJBaj-MSWb9rK1/view?usp=drivesdk</a></td>
+</tr>
+<tr class="odd">
+<td>23. Geology Kalimantan Timu</td>
+<td>Shape files</td>
+<td>Geological data layer of the East Kalimantan Province (Raster Layer)</td>
+<td><a href="https://drive.google.com/file/d/1Ke99g1lqXIx2ku2Vy8CBxl62L8Htv3Ce/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/1Ke99g1lqXIx2ku2Vy8CBxl62L8Htv3Ce/view?usp=drivesdk</a></td>
+</tr>
+<tr class="even">
+<td>Tituk Api Hotspot se-Indonesia Tahun 2019</td>
+<td>Shape files</td>
+<td>Forest fire hotspot data of Indonesia in 2019</td>
+<td><a href="https://drive.google.com/file/d/1Kc1e_Ti6_LzystyWjdMcy1QjmQEKMuu4/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/1Kc1e_Ti6_LzystyWjdMcy1QjmQEKMuu4/view?usp=drivesdk</a></td>
+</tr>
+<tr class="odd">
+<td>OSM Buildings</td>
+<td>Shape files</td>
+<td>Buildings and settlement data of Indonesia</td>
+<td><a href="https://drive.google.com/file/d/1iTvLFztIJQfcIxVZ-Tu8CUZevrSbvchO/view?usp=drivesdk" class="uri">https://drive.google.com/file/d/1iTvLFztIJQfcIxVZ-Tu8CUZevrSbvchO/view?usp=drivesdk</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="scope-of-work">2.4 Scope of Work</h2>
+<p>Our team was tasked to specifically survey the East Kalimantan Province, which consists of districts and sub-districts from four areas: Kota Balikpapan, Kota Samarinda, Kutai Kartanegara and Penajam Paser Utara in Indonesia and to identify a suitable site in this study area to build the new capital.</p>
+<p><img src="PICTURES/Study%20Area.png" /></p>
+<p>This will be achieved by studying and reporting on the study area in seven aspects:</p>
+<ul>
+<li><p>Population and Demographics</p></li>
+<li><p>Economic and Business</p></li>
+<li><p>Transport and Communication</p></li>
+<li><p>Infrastructure</p></li>
+<li><p>Environment and Hazard</p></li>
+<li><p>Geology</p></li>
+<li><p>Topography</p></li>
+</ul>
+<p>Here, we will identify any patterns and trends in the geospatial distribution of the above aspects, and comment.</p>
+<p>Followed by thoroughly investigating and analysing the study area, we will recommend a suitable site within our study area for the proposed new capital city based on four overarching criteria:</p>
+<ul>
+<li>Sizable
+<ul>
+<li>Area has to be between 4500-5500 hectares in size</li>
+</ul></li>
+<li>High accessibility
+<ul>
+<li>Near road transport</li>
+<li>Near airports and seaports</li>
+<li>Near current urban settlement areas</li>
+</ul></li>
+<li>Safety
+<ul>
+<li>Avoid potential natural disaster risk areas such as coastlines and major rivers</li>
+<li>Avoid forest fires hot spots</li>
+</ul></li>
+<li>Ease of development
+<ul>
+<li>Avoid steep slopes</li>
+<li>Avoid natural forests</li>
+</ul></li>
+</ul>
+<p>Here, we will weigh the above factors over the study area and analyse which areas are best suited to build the capital city to achieve these conditions.</p>
+<h1 id="project-schedule">2.5 Project Schedule</h1>
+<h1 id="references">3.0 References</h1>
+<p>Eliraz, G. (2020, March 28). The many reasons to move Indonesia’s capital. The Diplomat. Retrieved November 15, 2021, from <a href="https://thediplomat.com/2020/03/the-many-reasons-to-move-indonesias-capital/" class="uri">https://thediplomat.com/2020/03/the-many-reasons-to-move-indonesias-capital/</a>. The Guardian. (2019, August 27). Why is Indonesia moving its capital city? everything you need to know. The Guardian. Retrieved November 15, 2021, from <a href="https://www.theguardian.com/world/2019/aug/27/why-is-indonesia-moving-its-capital-city-everything-you-need-to-know" class="uri">https://www.theguardian.com/world/2019/aug/27/why-is-indonesia-moving-its-capital-city-everything-you-need-to-know</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
