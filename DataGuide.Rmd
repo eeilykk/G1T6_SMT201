@@ -725,7 +725,7 @@ Using Non-Agriculture Land as an example:
 
 19. Export and save the feature as a new layer as Final Site. This layer will show the final site we chose to put the new capital city which is Prangat Selatan.
 
-![](GIS Task 2/Final Site.png)
+![](GIS Task 2/1 Final Site.png)
 
 20. Remove the previous layer.
 
