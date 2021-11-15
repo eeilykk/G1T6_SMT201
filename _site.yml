@@ -15,8 +15,8 @@ navbar:
     - text: "Poster"
       href: Project_Poster.html
     - text: "Report of Survery"
-      href: report.html
+      href: task1.html
     - text: "Site Selection Report"
-      href: siteselection.html
+      href: task2.html
 output: distill::distill_article
 
