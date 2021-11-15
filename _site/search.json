@@ -5,7 +5,7 @@
       "title": "Data Guide",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T16:34:30+08:00"
+      "last_modified": "2021-11-15T20:33:53+08:00"
     },
     {
       "path": "fullreport.html",
@@ -13,7 +13,7 @@
       "description": "This is our full report.\n",
       "author": [],
       "contents": "\r\nMotivation\r\nIn 2019, Indonesia’s president, Joko Widodo announced that his plan to move the national capital from Jakarta, on the island of Java, to the province of East Kalimantan, on Borneo. The relocation is believed to address economic inequality and relieve some of the heavy burden, which has led to serious urban problems - such as intensive floods, air pollution and overcrowding, on Jakarta. Moreover, compared to Jakarta, Kalimantan is located strategically in the centre of Indonesia and close to urban areas.\r\nHowever, the relocation has raised some concerns with environmentalists fearing the relocation will have negative effects on Kalimantan: ecologically damaging the rainforests habitat for wildlife species, notably the remaining orangutan population.\r\nHence, it is important to strategise and identify a suitable area in Kalimantan to build the new capital, such that it would meet the criteria of functioning as a city and as the centre of governance without risking environmental damage to the rainforests and endangering wildlife.\r\nObjective\r\nData\r\nScope of Work\r\nProject Schedule\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T16:34:23+08:00"
+      "last_modified": "2021-11-15T20:33:53+08:00"
     },
     {
       "path": "index.html",
@@ -27,21 +27,21 @@
       ],
       "date": "10-09-2021",
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T16:34:19+08:00"
+      "last_modified": "2021-11-15T20:33:53+08:00"
     },
     {
       "path": "overview.html",
       "title": "Overview",
       "author": [],
       "contents": "\r\nR Markdown\r\n\r\n## Including Plots\r\n\r\nYou can also embed plots, for example:\r\n\r\n<div class=\"layout-chunk\" data-layout=\"l-body\">\r\n<img src=\"overview_files/figure-html5/pressure-1.png\" width=\"624\" />\r\n\r\n<\/div>\r\n\r\n\r\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\r\n```{.r .distill-force-highlighting-css}\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T16:20:13+08:00"
+      "last_modified": "2021-11-15T20:33:53+08:00"
     },
     {
       "path": "Project_Poster.html",
       "title": "Poster",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T16:34:32+08:00"
+      "last_modified": "2021-11-15T20:33:53+08:00"
     },
     {
       "path": "reportofsurvey.html",
@@ -49,7 +49,7 @@
       "description": "Task 1 \n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T16:34:47+08:00"
+      "last_modified": "2021-11-15T20:33:53+08:00"
     },
     {
       "path": "siteselection.html",
@@ -57,7 +57,7 @@
       "description": "Task 2 \n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T16:34:38+08:00"
+      "last_modified": "2021-11-15T20:33:53+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
