@@ -44,20 +44,20 @@
       "last_modified": "2021-11-15T16:20:35+08:00"
     },
     {
+      "path": "reportofsurvery.html",
+      "title": "Report of Survey",
+      "description": "Task 1 \n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-15T16:31:46+08:00"
+    },
+    {
       "path": "siteselection.html",
       "title": "Site Selection Report",
       "description": "Task 2 \n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
       "last_modified": "2021-11-15T16:28:21+08:00"
-    },
-    {
-      "path": "task1.html",
-      "title": "Report of Survey",
-      "description": "Task 1 \n",
-      "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-15T16:28:26+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
