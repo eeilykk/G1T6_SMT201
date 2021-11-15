@@ -1,7 +1,5 @@
 ---
 title: "Site Selection Report"
-description: |
-  In this section, we will be thoroughly investigating and analysing the study area, to select a suitable site  within our study area for the proposed new capital city based on four overarching criteria: **sizable, high accessibility, safety, ease of development**.
 output:
   distill::distill_article:
     self_contained: false
@@ -146,10 +144,11 @@ The forest areas are identified by the green polygons. However, as the size of t
 
 ## 1.4.3 Comparing Distribution of Roads
 
-
+<center>
 
 ![_Figure 11. Distribution of Roads_](compare/Roads.png)
 
+</center>
 
 ## 1.4.4 Comparing Distribution of Hotspots
 
@@ -251,8 +250,11 @@ Moreover, out of the 3 orange highlighted cells of Prangat Selatan, 2 of them (i
 
 # 1.6 Conclusion 
 
+<center>
 
 ![_Figure 18. Finale Selected Suitable Site_](GIS Task 2/1 Final Site.png)
+
+</center>
 
 
 **Prangat Selatan** is the final selected suitable site for the new capital.

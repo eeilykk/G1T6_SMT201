@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,27 +85,28 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+
   <!--radix_placeholder_meta_tags-->
-  <title>G1T6: Site Selection Report</title>
+  <title>G1T6: Poster</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="G1T6: Site Selection Report"/>
+  <meta property="og:title" content="G1T6: Poster"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="G1T6"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="G1T6: Site Selection Report"/>
+  <meta property="twitter:title" content="G1T6: Poster"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Site Selection Report"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Poster"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1600,7 +1601,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2101,7 +2105,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Site Selection Report","authors":[]}
+{"title":"Poster","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2127,7 +2131,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Site Selection Report</h1>
+<h1>Poster</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2135,200 +2139,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<h1 id="site-selection-report">1.0 Site Selection Report</h1>
-<p>In this section, we will be thoroughly investigating and analysing the study area, to select a suitable site within our study area for the proposed new capital city based on four overarching criteria:</p>
-<ul>
-<li><p>Sizable</p></li>
-<li><p>High accessibility</p></li>
-<li><p>Safety</p></li>
-<li><p>Ease of development</p></li>
-</ul>
-<h1 id="ahp-analysis">2.0 AHP Analysis</h1>
-<p>Before performing site selection, we conducted Analytical Hierarchical Process (AHP) analysis to determine which criteria are more important in decision making by quantifying them. This aids in the process of achieving our goal: to determine a suitable area in East Kalimantan for the relocation of the capital. Bearing in mind that the new area would meet the criteria of functioning as a capital city and as the centre of governance, without risking environmental damage to the rainforests and endangering wildlife.</p>
-<center>
-<figure>
-<img src="GIS%20Task%202/AHP%20Site%20Suitability.png" alt="Figure 1. Pairwise Comparison Matrix" /><figcaption aria-hidden="true"><em>Figure 1. Pairwise Comparison Matrix</em></figcaption>
-</figure>
-</center>
-<center>
-<figure>
-<img src="GIS%20Task%202/AHP%20Consistency%20Check.png" alt="Figure 2. AHP Scores" /><figcaption aria-hidden="true"><em>Figure 2. AHP Scores</em></figcaption>
-</figure>
-</center>
-<p>We set n = 9 for the number of criterias to be used in our AHP calculation and ranked these criteria at varying importance level based on the fundamental scale, which will be further explained later. The consistency check of 5% is below 10% and the inconsistency is acceptable. With the final calculated AHP scores, each criteria had a different and relevant importance level to the context of relocating Indonesia’s capital, which aid in the process of determining the final suitable site.</p>
-<table>
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 22%" />
-<col style="width: 61%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Ranking</th>
-<th>Criterion</th>
-<th>Reason</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Rivers</td>
-<td>East Kalimantan is classified as a high risk exposure to a high level of river flood hazard, meaning that potentially damaging and life-threatening river floods are expected to occur at least once in the next 10 years (ThinkHazard, n.d.). With a building of a city, an urban area, there is a risk of urban floods due to the impemearble urban surface. Moreover, with climate change, there has been more frequent and extreme heavy rainfall events, increasing the river flood hazard level in the near future.</td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td>Forests</td>
-<td>If the chosen site for relocation is on or near forested areas, deforestation would likely take place to make space for buildings and urbanisation. However, East Kalimantan is known for its large areas of forests where indigneous people live and various wildlife habitat, such as orangutans (Chandran, 2019). With deforestation, indigneous people would be displaced along with a loss of cultural heritage and also endangering wildlife species. Moreover, with global warming, deforestation should be avoided as much as possible.</td>
-</tr>
-<tr class="odd">
-<td>1</td>
-<td>Roads</td>
-<td>Road infrastructure is a very important public asset. Roads provide high accessibility and convenience, and open up more areas, of which all stimulate economic development and bring about social benefits (Malkoc, 2015). For example, one aspect to address economic inequality and poverty, which is one reason Jokowi called for the relocation of the capital, is through providing access to employment, social, health and education services.</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Hotspots</td>
-<td>If the chosen site for relocation is near a fire hotspot, there can be considerable financial losses for the new capital. Outbreaks of wildfire can disrupt the living conditions of those in the capital. Moreover, the capital would need to channel resources to wildfire mitigation measures. As such, it is preferable for the new capital to be located away from hotspots. However, compared to floods, the frequency and severity of wildfires are primarily influenced by the changing climate and not much by urbanisation. Hence, hotspots are of a lower rank of importance compared to rivers.</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>Slope</td>
-<td>It is important for the selected site to avoid steep slopes due to the high development costs and constraints when developing buildings on slopes. Moreover, buildings and housings are more susceptible to landslides hazards on slopes. However, there can be landslide mitigation measures for buildings. The risks and severity of landslides are also dependent on the soil type.</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>Airports</td>
-<td>Airports are important to the economic sector of the capital, maintaining and improving the capital’s national and international trade relations, and are catalysts for tourism growth (Berti, 2019). However, it is important to note that airports need to be strategically located. Not only do airports need to be close and accessible for the citizens, thus the importance of roads before airports, they also need to be of a certain distance from residential areas as much as possible due to noise pollution.</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>Buildings</td>
-<td>It is important for the selected site to be near to current urban settlement areas, such that the new capital can leverage on and build relationships existing economic and business in the current urban settlement areas. However, it should not be at current major settlement areas to minimise overcrowding and noise pollution. Long travelling distances between urban areas can always be solved by high accessibility and efficiency roads.</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>Coastline</td>
-<td>While it is important for the selected site to avoid being near sea costs due to natural disasters such as coastal flooding and tsunamis, the frequency of tsunamis specifically happens once every five years mostly on the islands of Sumatra and Java (Indonesia Investments, 2019). Moreover, Indonesia has wave breakers in place to mitigate coastal floods. Lastly, while it is ideal to be located away from coastlines, seaports are often located near coastlines.</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>Seaports</td>
-<td>While seaports act as trade facilitators, with climate change and rising sea levels, there is a risk of seaports being inundated.</td>
-</tr>
-</tbody>
-</table>
-<h1 id="narrowing-down-the-suitable-sites">1.3 Narrowing Down the Suitable Sites</h1>
-<center>
-<figure>
-<img src="GIS%20Task%202/8%20AHP%20Suitability.png" alt="Figure 3. AHP-Suitability Layer" /><figcaption aria-hidden="true"><em>Figure 3. AHP-Suitability Layer</em></figcaption>
-</figure>
-</center>
-<p>We used the factor scores derived in Figure 2. to compute the land suitability layer (Figure 3.). Locations with values closer to 1, which is represented as a whiter area on the map, are more suitable than locations with values closer to 0, which is represented as a blacker area on the map.</p>
-<center>
-<figure>
-<img src="GIS%20Task%202/7%20MCDA%20Model.png" alt="Figure 4. MCDA Model of Suitability Layer" /><figcaption aria-hidden="true"><em>Figure 4. MCDA Model of Suitability Layer</em></figcaption>
-</figure>
-</center>
-<p>From Figure 3., we created a binary land suitability model for easier visualisation for areas that are suitable or not suitable for the new capital. It is recommended that the selected site should have at least a composite critierion scores of 0.5. As such, locations with the value of 1 denotes suitable, which is represented by white, and with the value of 0 denotes not suitable, which is represented by black. Referring to Figure 4., it is visually easier to identify areas that are suitable, which are the white areas towards the North of the study area, and we can disregard the black areas.</p>
-<center>
-<figure>
-<img src="GIS%20Task%202/6%20Vectorised%20Model.png" alt="Figure 5. Vectorised Model of Suitability Layer" /><figcaption aria-hidden="true"><em>Figure 5. Vectorised Model of Suitability Layer</em></figcaption>
-</figure>
-</center>
-<center>
-<figure>
-<img src="GIS%20Task%202/4%20Potential%20Sites.png" alt="Figure 6. Potential Suitable Sites based on Area" /><figcaption aria-hidden="true"><em>Figure 6. Potential Suitable Sites based on Area</em></figcaption>
-</figure>
-</center>
-<p>Referring to Figure 6., the brown area is identified as the potential suitable area for the new capital, which aligns with the white areas shown in Figure 4.</p>
-<center>
-<p>[<em>Figure 7. Potential Suitable Final Sites based on Subzones</em>](GIS Task 2/3 Potential Final Sites (Area not taken into account.png)</p>
-</center>
-<p>From Figure 6., we chose subzones where the whole area is of complete suitability, i.e. no small area within a subzone is of black colour (Figure 4.). This narrowed down the results to 8 subzones as potential final sites for the new capital.</p>
-<center>
-<figure>
-<img src="GIS%20Task%202/2%20Final%20Site%20Choices.png" alt="Figure 8. Final Suitable Sites" /><figcaption aria-hidden="true"><em>Figure 8. Final Suitable Sites</em></figcaption>
-</figure>
-</center>
-<p>Bearing in mind that the AHP score does not account for the size of the subzone, we further narrowed down from 8 to 2 subzones by eliminating subzones that are not of 4500-5500 hectares in size. The remaining 2 subzones, shaded in grey, are Prangat Baru (bottom) and Prangat Selatan (top).</p>
-<h1 id="comparing-the-final-sites-prangat-baru-and-prangat-selatan">1.4 Comparing the Final Sites: Prangat Baru and Prangat Selatan</h1>
-<p>As both Prangat Baru and Prangat Selatan subzones meet all the criterias of a suitable site, we did an in-depth comparison between both subzones based on the 9 criteria to determine the final suitable site for the new capital.</p>
-<h2 id="comparing-distribution-of-rivers">1.4.1 Comparing Distribution of Rivers</h2>
-<center>
-<figure>
-<img src="compare/Rivers.png" alt="Figure 9. Distribution of Rivers" /><figcaption aria-hidden="true"><em>Figure 9. Distribution of Rivers</em></figcaption>
-</figure>
-</center>
-<p>The rivers are identified by the red polygons. There are no rivers located in close proximity to Prangat Baru and Prangat Selatan. However, between Prangat Baru and Prangat Selatan, Prangar Baru is located closer to the major river in East Kalimantan.</p>
-<h2 id="comparing-locations-of-forests">1.4.2 Comparing Locations of Forests</h2>
-<center>
-<figure>
-<img src="compare/FOREST.png" alt="Figure 10. Location of Forests" /><figcaption aria-hidden="true"><em>Figure 10. Location of Forests</em></figcaption>
-</figure>
-</center>
-<p>The forest areas are identified by the green polygons. However, as the size of the polygons are rather smaller, the forest areas have been identified by the red circles. There are forests located in close proximity to Prangat Baru and Prangat Selatan. Although Prangar Baru is located closer to a forest than Prangar Selatan, the distance between the forest and Prangar Baru is very great, such that there is no cause and effect relationship between the forest and Prangar Baru.</p>
-<h2 id="comparing-distribution-of-roads">1.4.3 Comparing Distribution of Roads</h2>
-<center>
-<figure>
-<img src="compare/Roads.png" alt="Figure 11. Distribution of Roads" /><figcaption aria-hidden="true"><em>Figure 11. Distribution of Roads</em></figcaption>
-</figure>
-</center>
-<h2 id="comparing-distribution-of-hotspots">1.4.4 Comparing Distribution of Hotspots</h2>
-<center>
-<figure>
-<img src="compare/Hotspots.png" alt="Figure 12. Distribution of Hotspots" /><figcaption aria-hidden="true"><em>Figure 12. Distribution of Hotspots</em></figcaption>
-</figure>
-</center>
-<p>The West of Prangat Baru has two hotspot locations, while Prangat Selatan has no hotspots located within her subzone.</p>
-<h2 id="comparing-distribution-of-slope">1.4.5 Comparing Distribution of Slope</h2>
-<center>
-<figure>
-<img src="compare/Slope.png" alt="Figure 13. Distribution of Slopes" /><figcaption aria-hidden="true"><em>Figure 13. Distribution of Slopes</em></figcaption>
-</figure>
-</center>
-<p>The white areas represent steeper slopes, while the darker areas represent gentler slopes. Since Prangat Baru and Prangat Selatan are neighbouring regions and referring to Figure 13., both subzones experience rather similar slopes.</p>
-<h2 id="comparing-location-of-airports">1.4.6 Comparing Location of Airports</h2>
-<center>
-<figure>
-<img src="compare/AIRPORTS.png" alt="Figure 14. Location of Airports" /><figcaption aria-hidden="true"><em>Figure 14. Location of Airports</em></figcaption>
-</figure>
-</center>
-<p>The locations of the airports can be identified by the green dot, circled by a red circle. Prangat Baru is in closer proximity to an airport than Prangat Selatan.</p>
-<h2 id="comparing-distribution-of-buildings">1.4.7 Comparing Distribution of Buildings</h2>
-<center>
-<figure>
-<img src="compare/Buildings.png" alt="Figure 15. Distribution of Buildings" /><figcaption aria-hidden="true"><em>Figure 15. Distribution of Buildings</em></figcaption>
-</figure>
-</center>
-<p>While there is a small urban settlement located within Prangat Selatan, Prangat Baru is in closer proximity to a major urban settlement than Prangat Selatan.</p>
-<p>##1.4.8 Comparing Distribution of Coastline</p>
-<center>
-<figure>
-<img src="compare/Coastline.png" alt="Figure 16. Distribution of Coastline" /><figcaption aria-hidden="true"><em>Figure 16. Distribution of Coastline</em></figcaption>
-</figure>
-</center>
-<p>The coastline can be identified by the red lines. Both Prangat Baru and Prangat Selatan are about an equal distance from the coastline.</p>
-<h2 id="comparing-locations-of-seaports">1.4.9 Comparing Locations of Seaports</h2>
-<center>
-<figure>
-<img src="compare/Seaports.png" alt="Figure 17. Location of Seaports" /><figcaption aria-hidden="true"><em>Figure 17. Location of Seaports</em></figcaption>
-</figure>
-</center>
-<p>The location of the seaports can be identified by the light yellow dots. Prangat Selatan is in closer proximity to a seaport than Prangat Baru.</p>
-<h1 id="overview-of-comparison-between-prangat-baru-and-prangat-selatan">1.5 Overview of Comparison between Prangat Baru and Prangat Selatan</h1>
-<center>
-<p><img src="compare/table6.png" /></p>
-</center>
-<p>Referring to Table 1., the orange highlighted cell indicates a preference of the respective criterion for the corresponding site. Since Prangat Selatan has 3 orange highlighted cells compared to Prangat Baru with 2 orange highlighted cells, Prangat Selatan is a more ideal suitable site for the new capital.</p>
-<p>Moreover, out of the 3 orange highlighted cells of Prangat Selatan, 2 of them (i.e. rivers and hotspots) has a higher AHP score than the 2 orange highlighted cells (i.e. airpots and buildings) of Prangat Baru. Notably, river flooding and wildfires are natural occurrence which cannot be prevented, but only mitigated. On the other hand, being in closer proximity to airports and buildings can always be achieved indirectly, when considering travelling time, with a more efficient road network.</p>
-<h1 id="conclusion">1.6 Conclusion</h1>
-<center>
-<figure>
-<img src="GIS%20Task%202/1%20Final%20Site.png" alt="Figure 18. Finale Selected Suitable Site" /><figcaption aria-hidden="true"><em>Figure 18. Finale Selected Suitable Site</em></figcaption>
-</figure>
-</center>
-<p><strong>Prangat Selatan</strong> is the final selected suitable site for the new capital.</p>
-<p>#1.7 References Berti, A. (2019, June 7). Can airports help lift communities out of poverty? Airport Technology. Retrieved November 15, 2021, from <a href="https://www.airport-technology.com/features/importance-of-airports-to-a-country/" class="uri">https://www.airport-technology.com/features/importance-of-airports-to-a-country/</a>. Chandran, R. (2019, August 30). Indigenous people under threat from Indonesia’s plan to move capital. Reuters. Retrieved November 15, 2021, from <a href="https://www.reuters.com/article/us-indonesia-landrights-environment-idUSKCN1VK0L6" class="uri">https://www.reuters.com/article/us-indonesia-landrights-environment-idUSKCN1VK0L6</a>. Malkoc, G. (2015, July 15). The importance of road maintenance. World Highways. Retrieved November 15, 2021, from <a href="https://www.worldhighways.com/wh8/wh9/wh10/feature/importance-road-maintenance" class="uri">https://www.worldhighways.com/wh8/wh9/wh10/feature/importance-road-maintenance</a>. Indonesia Investments. (n.d.). Natural disasters in Indonesia. Indonesia Investments. Retrieved November 15, 2021, from <a href="https://www.indonesia-investments.com/business/risks/natural-disasters/item243" class="uri">https://www.indonesia-investments.com/business/risks/natural-disasters/item243</a>. Think Hazard. (n.d.). River flood. Think Hazard. Retrieved November 15, 2021, from <a href="https://thinkhazard.org/en/report/116-indonesia/FL" class="uri">https://thinkhazard.org/en/report/116-indonesia/FL</a>.</p>
+<p>hey</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

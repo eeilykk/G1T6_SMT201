@@ -169,24 +169,25 @@ The distribution of geology sediments follows a trend, whereby the primary sedim
 
 #1.7 Topography
 
-<centre> 
+<center> 
 
 ![Figure 13a. Topography Map](Topography/Topography.png)
 
-</centre>
+</center>
 
-<centre>
+
+<center>
 
 ![Figure 13b. 3D Topography Map (Top View)](Topography/Topography Top.png)
 
-</centre>
+</center>
 
 
-<centre>
+<center>
 
 ![Figure 13c. 3D Topography Map (Side View)](Topography/Topography Side.png)
 
-</centre> 
+</center> 
 
 There is a series of steep slopes at the South-West region of the study area, reaching peaks of up to 867m which can indicate a mountain range as mountains are landforms that rise above 300m. Other than that, there are a few areas of slight elevation at the Northern, central and Southern regions of the study area. The areas at the East hardly have any elevation, as it is the delta of the major rivers.
 
